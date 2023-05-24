@@ -45,7 +45,7 @@ public class SSHConsole {
             channelShell.connect();
 
             // 创建线程池和任务队列
-             executor = Executors.newScheduledThreadPool(1);
+             executor = Executors.newScheduledThreadPool(2);
             BlockingQueue<String> commandQueue = new LinkedBlockingQueue<>(1);
 
 
